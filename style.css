@@ -2,4 +2,31 @@ h2 {
     cursor: pointer;
 }
 
+.is-active {
+    display: block;
+}
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#footer {
+    background-color:rgb(247, 155, 159);
+    margin: 50px 0px 0px 0px; 
+}
+
+#jumbo {
+    margin-bottom: 50px;
+
+}
+
+#project {
+    margin-top: 5px;
+}
+
+.notification {
+    background-color: rgb(127, 224, 192);
+    color: white;
+    text-decoration: none;
+}

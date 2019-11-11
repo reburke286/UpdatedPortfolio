@@ -14,61 +14,147 @@
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="script.js"></script>
-        
-    
+<script src="script.js"></script> 
 
-    <title>Becca's Portfolio</title>
+<title>Becca's Portfolio</title>
+
 </head>
 <body>
-  <section class="hero is-medium is-primary is-bold">
+  <section class="hero is-medium is-primary is-bold" id="jumbo">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
           Becca Burke
         </h1>
-        <h2 class="subtitle">
+        <h2 class="subtitle" id="about">
           About Me
         </h2>
-        <h2 class="subtitle">
+        <h2 class="subtitle" id="contact">
           Contact Me
         </h2>
       </div>
     </div>
   </section>
 
-  <div class="columns is-mobile is-multiline is-centered">
-    <div class="column is-narrow">
-      <p class="bd-notification is-primary">
-        Weather App
-      </p>
+<div class="container is-widescreen">
+    <div class="tile is-ancestor">
+      <div class="tile is-horizontal is-12">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is child notification is-danger">
+              <p class="title">See Some Previous Work</p>
+            </article>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="column is-narrow">
-      <p class="bd-notification is-primary">
-        Timed Quiz
-      </p>
+
+    <div class="tile is-ancestor">
+    <div class="tile is-vertical is-6">
+      <div class="tile">
+        <div class="tile is-parent is-vertical">
+          <article class="tile is-child notification">
+            <a href=https://reburke286.github.io/WeatherApp/ class="title" target="_blank" style="text-decoration:none">Weather App</a>
+          </article>
+          <article class="tile is-child notification">
+            <a href=https://reburke286.github.io/Quiz/ class="title" target="_blank" style="text-decoration:none">Timed Quiz</a>
+          </article>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification">
+            <a href=https://reburke286.github.io/DayPlanner/ class="title" target="_blank" style="text-decoration:none">Day Planner</a>
+          </article>
+        </div>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification">
+          <a href=https://reburke286.github.io/PasswordGenerator/ class="title" target="_blank" style="text-decoration:none">Password Generator</a>
+          <div class="content">
+          </div>
+        </article>
+      </div>
     </div>
-    <div class="column is-narrow">
-      <p class="bd-notification is-primary">
-        Day Planner
-      </p>
-    </div>
-    <div class="column is-narrow">
-      <p class="bd-notification is-primary">
-        Original Portfolio
-      </p>
-    </div>
-    <div class="column is-narrow">
-      <p class="bd-notification is-primary">
-        Domain Name API
-      </p>
+    <div class="tile is-parent">
+      <article class="tile is-child notification">
+        <div class="content">
+          <a href=https://reburke286.github.io/ProjectOne/ class="title" target="_blank" style="text-decoration:none">Project One</a>
+          <p class="subtitle" id="project">We built a program that searches for the expiration dates of a list of domain names. The goal is to allow our client to purchase the URL rights before they expire. The program allows you to add and delete new domain names. On page load any URL's that are going to expire in less than a month will appear on the dynamic table.</p>
+          <div class="content">
+          </div>
+        </div>
+      </article>
     </div>
   </div>
+</div>
 
-  <footer class="footer">
+  <!-- Modal Content -->
+  <div class="modal" id="modal-contact">
+    <div class="modal-background has-background-light"></div>
+    <div class="modal-content">
+      <h3 class="title is-3">Contact Me</h3>
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="your name...">
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control">
+          <input class="input" type="email" placeholder="your email...">
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+          <textarea class="textarea is-large" placeholder="your message..."></textarea>
+        </div>
+      </div>
+      <div class="control">
+        <button class="button is-primary">Submit</button>
+      </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+  </div>
+    
+
+<div class="modal" id="modal-about">
+  <div class="modal-background has-background-light">
+  <div class="modal-content">
+    <div class="container" id="about-container">
+        <div class="notification">
+          <h3 class="title is-3">About Me</h3>
+          <div class="columns">
+              <div class="column is-4">
+                <figure class="image is-128x128">
+                  <img src="images/portfolio1.jpg" alt="Bio image">
+                </figure>
+              </div>
+              <div class="column is-8">
+                  <div class="content">
+                      <p>Like many clueless college students, I majored in what I was interested in - and then never got a career in it. I landed myself in food service management and have managed a coffee shop from 2012 to 2019. Don't get me wrong - it's fun! It makes you endlessly problem solve, be efficient and creative with your resources, and most of all, learn how to get along with everyone. But after 8 years in this industry, I'd like to move on.</p>
+  
+                      <p>I found my interest of software engineering suddenly. I thought I'd never want to sit in front of a screen all day, but people change. Now I'm learning to develop and loving how challenging it is. It's frustrating and demanding and incredibly rewarding when you get it right. You enjoy that feeling for about 4 minutes and then move on to the next! Please enjoy this site and see a little bit of what I've been up to for the past 6 months. And then go ahead and reach out with that job offer.</p>      
+                  </div>
+              </div>     
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  </div>
+</div>
+    
+    
+
+  
+
+  <footer class="footer" id="footer">
     <div class="content has-text-centered">
       <p>
-        <strong>Portfolio</strong> by <a href="https://becca-burke.com">Becca Burke</a>. This portfolio represents only the original work by 
+        <strong>Portfolio</strong> by <a href="https://www.becca-burke.com/" target="_blank">Becca Burke</a>. This portfolio represents only the original work by 
         UCLA full stack web development student.
       </p>
     </div>
